@@ -6,5 +6,24 @@
     "schema": "backend/prisma/schema.prisma"
   },
   "devDependencies": {
+      "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+ "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest" 
+    },
+    "moduleFileExtensions": [  
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
